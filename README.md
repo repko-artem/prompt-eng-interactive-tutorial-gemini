@@ -1,58 +1,43 @@
-# Welcome to Anthropic's Prompt Engineering Interactive Tutorial
+# Gemini Prompt Engineering Interactive Tutorial
 
-## Course introduction and goals
+This repository now includes a Gemini-first notebook track in `Gemini 1P`.
 
-This course is intended to provide you with a comprehensive step-by-step understanding of how to engineer optimal prompts within Claude.
+## Quick start (Gemini)
+1. Open `Gemini 1P/00_Tutorial_How-To.ipynb`.
+2. Create a free API key in Google AI Studio: https://aistudio.google.com/apikey
+3. Set `API_KEY` and run notebook cells top-to-bottom.
 
-**After completing this course, you will be able to**:
-- Master the basic structure of a good prompt 
-- Recognize common failure modes and learn the '80/20' techniques to address them
-- Understand Claude's strengths and weaknesses
-- Build strong prompts from scratch for common use cases
+Default model in the Gemini track: `gemini-2.5-flash`.
 
-## Course structure and content
+## What this course covers
 
-This course is structured to allow you many chances to practice writing and troubleshooting prompts yourself. The course is broken up into **9 chapters with accompanying exercises**, as well as an appendix of even more advanced methods. It is intended for you to **work through the course in chapter order**. 
+After completing this course, you will be able to:
+- Master the basic structure of a strong prompt
+- Recognize common failure modes and apply practical fixes
+- Understand model strengths and limitations
+- Build robust prompts from scratch for common use cases
 
-**Each lesson has an "Example Playground" area** at the bottom where you are free to experiment with the examples in the lesson and see for yourself how changing prompts can change Claude's responses. There is also an [answer key](https://docs.google.com/spreadsheets/d/1jIxjzUWG-6xBVIa2ay6yDpLyeuOh_hR_ZB75a47KX_E/edit?usp=sharing).
+The course includes 9 chapters with exercises and an appendix of advanced methods.
 
-Note: This tutorial uses our smallest, fastest, and cheapest model, Claude 3 Haiku. Anthropic has [two other models](https://docs.anthropic.com/claude/docs/models-overview), Claude 3 Sonnet and Claude 3 Opus, which are more intelligent than Haiku, with Opus being the most intelligent.
-
-*This tutorial also exists on [Google Sheets using Anthropic's Claude for Sheets extension](https://docs.google.com/spreadsheets/d/19jzLgRruG9kjUQNKtCg1ZjdD6l6weA6qRXG5zLIAhC8/edit?usp=sharing). We recommend using that version as it is more user friendly.*
-
-When you are ready to begin, go to `01_Basic Prompt Structure` to proceed.
-
-## Table of Contents
-
-Each chapter consists of a lesson and a set of exercises.
+## Table of contents
 
 ### Beginner
-- **Chapter 1:** Basic Prompt Structure
+- Chapter 1: Basic Prompt Structure
+- Chapter 2: Being Clear and Direct
+- Chapter 3: Assigning Roles
 
-- **Chapter 2:** Being Clear and Direct  
-
-- **Chapter 3:** Assigning Roles
-
-### Intermediate 
-- **Chapter 4:** Separating Data from Instructions
-
-- **Chapter 5:** Formatting Output & Speaking for Claude
-
-- **Chapter 6:** Precognition (Thinking Step by Step)
-
-- **Chapter 7:** Using Examples
+### Intermediate
+- Chapter 4: Separating Data from Instructions
+- Chapter 5: Formatting Output
+- Chapter 6: Precognition (Thinking Step by Step)
+- Chapter 7: Using Examples
 
 ### Advanced
-- **Chapter 8:** Avoiding Hallucinations
+- Chapter 8: Avoiding Hallucinations
+- Chapter 9: Building Complex Prompts (Industry Use Cases)
+- Appendix: Chaining Prompts, Tool Use, Search and Retrieval
 
-- **Chapter 9:** Building Complex Prompts (Industry Use Cases)
-  - Complex Prompts from Scratch - Chatbot
-  - Complex Prompts for Legal Services
-  - **Exercise:** Complex Prompts for Financial Services
-  - **Exercise:** Complex Prompts for Coding
-  - Congratulations & Next Steps
+## Notes
 
-- **Appendix:** Beyond Standard Prompting
-  - Chaining Prompts
-  - Tool Use
-  - Search & Retrieval
+- `Gemini 1P` contains the Gemini API version.
+- `Anthropic 1P` and `AmazonBedrock` folders are kept for reference/original variants.
