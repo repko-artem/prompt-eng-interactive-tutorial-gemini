@@ -8,6 +8,7 @@ This repository now includes a Gemini-first notebook track in `Gemini 1P`.
 3. Set `API_KEY` and run notebook cells top-to-bottom.
 
 Default model in the Gemini track: `gemini-2.5-flash`.
+Optional model: `gemma-3-27b-it` (Gemma 3).
 
 ## What this course covers
 
