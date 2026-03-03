@@ -10,6 +10,38 @@ This repository now includes a Gemini-first notebook track in `Gemini 1P`.
 Default model in the Gemini track: `gemini-2.5-flash`.
 Optional model: `gemma-3-27b-it` (Gemma 3).
 
+## Free-tier limits
+
+Official free-tier limits can change. Check the latest table:
+- https://ai.google.dev/gemini-api/docs/quota
+
+Your effective limits are shown in AI Studio and can be lower than generic documentation:
+- https://aistudio.google.com/rate-limit
+
+Current limits shown in your screenshot:
+- `Gemini 2.5 Flash`: `5 RPM`, `250,000 TPM`, `20 RPD`
+- `Gemini 3 Flash`: `5 RPM`, `250,000 TPM`, `20 RPD`
+- `Gemma 3 27B` (`gemma-3-27b-it`): `30 RPM`, `15,000 TPM`, `14,400 RPD`
+
+Generic doc references (may differ by account/project):
+- `gemini-2.5-flash`: often listed higher in docs
+- `Gemma 3 & 3n`: `30 RPM`, `15,000 TPM`, `14,400 RPD` (matches your screenshot)
+
+Preview models are usually more restricted and can be unstable:
+- `gemini-3-flash-preview` has a free tier, but limits and availability can vary (and can return temporary `503 UNAVAILABLE` during high demand).
+
+## Avoid rate-limit overruns
+
+1. Start with `gemini-2.5-flash` for the tutorial.
+2. If you hit `429 RESOURCE_EXHAUSTED` on Flash (`5 RPM / 20 RPD`), switch to `gemma-3-27b-it`.
+3. If a preview model returns `503 UNAVAILABLE`, retry later or switch back to a stable non-preview model.
+4. Throttle requests to your AI Studio limits (currently `<=5 RPM` for Flash in your project).
+
+Quick switch in notebooks:
+- `MODEL_NAME = "gemini-2.5-flash"`
+- `MODEL_NAME = "gemma-3-27b-it"`
+- `MODEL_NAME = "gemini-3-flash-preview"` (preview behavior may vary)
+
 ## What this course covers
 
 After completing this course, you will be able to:
